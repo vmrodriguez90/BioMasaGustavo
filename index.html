@@ -8,12 +8,29 @@
     </head>
     <body>
 
-        <p>This is my HTML5 Boilerplate.</p>
+        <p>Ejemplo calculo de Biomasa</p>
+        <label>Temperatura 1</label>
+        <input type="text" value="" id="temp1"/>
+        <label>Temperatura 2</label>
+        <input type="text" value="" id="temp1"/>
+        <button id="submit">Ejecutar</button>
+        <label>Resultado</label>
+        <p id="resultado">
+
+        </p>
+        
         <script src="./Biomasa.js"></script>
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
 <script>
 $(document).ready(function() {
-
+    $('#submit').click(function(e) {
+        e.preventDefault();
+        e.stopPropagation();
+        let temp1 = $('#temp1').val();
+        let temp2 = $('#temp2').val();
+        let value = Biomasa(0, [temp1, temp2]);
+        $('#resultado').html(JSON.stringify(value));
+    })
 });
 </script>
     </body>
