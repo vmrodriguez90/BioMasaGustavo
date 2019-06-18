@@ -121,10 +121,10 @@ function pol(T) {
 
 function pol2(T) {
     let x = T-273.15;
-    if (x > 250 && x < 350) {
+    // if (x > 250 && x < 350) {
         return (-16.16*(10^-9)*x^3+13.75*(10^-6)*x^2-3.85*(10^-3)*x+355.65*(10^-3))*1.34;
-    } else {
-        throw "T no admite tal valor";
-    }
+    // } else {
+    //     throw "T no admite tal valor";
+    // }
 }
 
