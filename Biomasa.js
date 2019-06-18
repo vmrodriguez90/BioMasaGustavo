@@ -4,8 +4,8 @@
 function Biomasa(tiempo, Temperaturas) {
     
 
-    const T10 = Temperaturas[1]
-    const T20 = Temperaturas[2]
+    const T10 = Temperaturas[0]
+    const T20 = Temperaturas[1]
 
     //--------------------------------------------------------------------------
     //DEFINO CONSTANTES COMUNES PARA AMBAS ECUACIONES
